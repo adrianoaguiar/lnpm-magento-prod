@@ -18,7 +18,9 @@ apt-get install -y mysql-client varnish vim nginx php5-fpm php5-cli php5-dev php
 cp ./conf/nginx/sites-available/default /etc/nginx/sites-available/default
 cp ./conf/mysql/my.cnf /etc/mysql/my.cnf
 cp ./conf/php/php.ini /etc/php5/fpm/php.ini
-cp ./conf/varnish/* /etc/varnish/
+cp ./conf/varnish/default.vcl /etc/varnish/
+cp ./conf/varnish/varnish.conf /etc/default/varnish
+echo $RANDOM | md5sum | awk '{ print $1 }' > /etc/varnish/secret
 
 rm /var/lib/mysql/ibdata1
 rm /var/lib/mysql/ib_logfile0
