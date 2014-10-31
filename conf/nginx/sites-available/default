@@ -1,9 +1,13 @@
 server {
     listen   127.0.0.1:8080;
-
     client_max_body_size 256m;
+    set $projectName $host;
+
+    if ($host ~ ^www\.(.+)$) {
+        set $projectName $1;
+    }
     
-    set    $documentRoot /var/www;
+    set    $documentRoot /var/www/$projectName/public_html;
     root   $documentRoot;
     index  index.html index.htm index.php;
     
