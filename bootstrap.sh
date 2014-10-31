@@ -22,6 +22,9 @@ cp ./conf/varnish/default.vcl /etc/varnish/
 cp ./conf/varnish/varnish.conf /etc/default/varnish
 echo $RANDOM | md5sum | awk '{ print $1 }' > /etc/varnish/secret
 
+mkdir /var/www
+chown www-data:www-data /var/www
+
 rm /var/lib/mysql/ibdata1
 rm /var/lib/mysql/ib_logfile0
 rm /var/lib/mysql/ib_logfile1
