@@ -5,4 +5,4 @@ git clone https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.gi
 cd /tmp/magentoenvironmentconfiguration
 chmod +x ./bootstrap.sh && ./bootstrap.sh
 cd -
-rm -rf /tmp/magentoenvironmentconfiguration
+#rm -rf /tmp/magentoenvironmentconfiguration
