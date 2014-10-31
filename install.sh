@@ -12,6 +12,7 @@ apt-get -y upgrade
 apt-get -q -y install mysql-server
 # Install nginx + varnish + php-fpm
 apt-get install -y git mysql-client varnish vim nginx php5-fpm php5-cli php5-dev php5-mysql php5-curl php5-gd php5-mcrypt php5-sqlite php5-xmlrpc php5-xsl php5-common
+php5enmod mcrypt
 git clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git $TMPDIR
 cd $TMPDIR
 
