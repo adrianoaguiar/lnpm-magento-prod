@@ -7,8 +7,7 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update
 # Install git
 # --------------------
-apt-get -q -y install unzip
-wget https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git /tmp/magentoenvironmentconfiguration
+apt-get -q -y install git
 git --work-tree=$TMPDIR --git-dir=$TMPDIR init
 git --work-tree=$TMPDIR --git-dir=$TMPDIR remote add origin https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git
 git --work-tree=$TMPDIR --git-dir=$TMPDIR fetch origin master
