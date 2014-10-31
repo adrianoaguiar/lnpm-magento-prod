@@ -10,10 +10,10 @@ apt-get update
 # Install git
 # --------------------
 apt-get -q -y install git
+
+git clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git $TMPDIR
+
 cd $TMPDIR
-
-git clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git ./
-
 chmod +x bootstrap.sh
 ./bootstrap.sh
 #cd -
