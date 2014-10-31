@@ -1,8 +1,9 @@
 #!/bin/bash
-
 TMPDIR=/tmp/magentoenvironmentconfiguration
+GITBIN=/usr/bin/git
+
 # Ignore the questions
-#export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
 # Update
 # --------------------
 apt-get update
@@ -11,7 +12,7 @@ apt-get update
 # --------------------
 apt-get -q -y install git
 
-git clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git $TMPDIR
+$GITBIN clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git $TMPDIR
 
 cd $TMPDIR
 chmod +x bootstrap.sh
