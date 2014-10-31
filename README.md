@@ -3,6 +3,8 @@ magentoenvironmentconfiguration
 
 Ubuntu/Debian - Magento Environment Configuration
 
+varnish + nginx + php-fpm + mysql
+
 Usage:
 
 ```bash
