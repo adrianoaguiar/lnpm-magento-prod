@@ -16,6 +16,6 @@ $GITBIN clone  https://github.com/SergeyCherepanov/magentoenvironmentconfigurati
 
 cd $TMPDIR
 chmod +x bootstrap.sh
-./bootstrap.sh
-#cd -
+#./bootstrap.sh
+cd -
 #rm -rf $TMPDIR
