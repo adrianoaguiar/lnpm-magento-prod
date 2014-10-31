@@ -5,6 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 # Update
 # --------------------
 apt-get update
+apt-get -y upgrade
 # Mysql
 # --------------------
 # Install MySQL quietly
