@@ -12,9 +12,9 @@ apt-get update
 apt-get -q -y install git
 cd $TMPDIR
 
-git clone --quiet https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git ./
+git clone  https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git ./
 
-chmod +x ./bootstrap.sh
+chmod +x bootstrap.sh
 ./bootstrap.sh
-cd -
-rm -rf $TMPDIR
+#cd -
+#rm -rf $TMPDIR
