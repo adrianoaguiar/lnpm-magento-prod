@@ -54,7 +54,7 @@ server {
         if (!-e $request_filename) { 
             rewrite / /index.php last; 
         }
-        fastcgi_pass                    127.0.0.1:9000;
+        fastcgi_pass                    unix:/var/run/php5-fpm.sock;
         fastcgi_index                   index.php;
         fastcgi_split_path_info         ^(.+\.php)(.*)$;
         include                         fastcgi_params;
