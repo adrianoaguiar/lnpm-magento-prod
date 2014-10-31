@@ -15,6 +15,7 @@ cd $TMPDIR
 git clone --quiet https://github.com/SergeyCherepanov/magentoenvironmentconfiguration.git
 git clone --quiet
 
-chmod +x ./bootstrap.sh && ./bootstrap.sh
+chmod +x ./bootstrap.sh
+./bootstrap.sh
 cd -
 #rm -rf /tmp/magentoenvironmentconfiguration
