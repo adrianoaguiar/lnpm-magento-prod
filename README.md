@@ -7,7 +7,7 @@ varnish + nginx + php-fpm + mysql
 
 Usage:
 
-### Ubuntu 1404:
+### Ubuntu 14.04:
 
 ```bash
 $ sudo su
