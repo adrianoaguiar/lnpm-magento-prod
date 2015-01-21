@@ -1,4 +1,4 @@
-Ubuntu Linux - Magento Environment Setup
+Ubuntu Linux - Magento Development Environment Setup
 ===============================
 
 varnish + nginx + php-fpm + mysql
