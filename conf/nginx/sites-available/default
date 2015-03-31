@@ -8,6 +8,8 @@ server {
         set $projectName $1;
     }
     
+    server_name $projectName;
+    
     set $documentRoot /var/www/$projectName/public_html;
     if (!-d $documentRoot) {
         set $documentRoot /usr/share/nginx/html;
