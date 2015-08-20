@@ -11,9 +11,7 @@ server {
     server_name $projectName;
     
     set $documentRoot /var/www/$projectName/public_html;
-    if (!-d $documentRoot) {
-        set $documentRoot /usr/share/nginx/html;
-    }
+
     root   $documentRoot;
     index  index.html index.htm index.php;
     
