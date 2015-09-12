@@ -9,14 +9,15 @@ server {
     }
     
     server_name $projectName;
-    
+    autoindex  off;
+
     set $documentRoot /var/www/$projectName/public_html;
 
     root   $documentRoot;
-    index  index.html index.htm index.php;
+    index  index.html index.php;
     
     #deny magento protected files
-    location ~ ^(/app|/media/downloadable|/var|/shell|/pkginfo|/media/customer|/lib|/includes) {
+    location ~ ^(/app/|/media/downloadable/|/var/|/shell/|/pkginfo/|/media/customer/|/lib/|/includes/) {
         rewrite ^ /index.php last;
     }
 
@@ -70,6 +71,6 @@ server {
         fastcgi_buffers                 4   256k;
         fastcgi_busy_buffers_size       256k;
         fastcgi_temp_file_write_size    256k;
-        fastcgi_param                   MAGE_IS_DEVELOPER_MODE  true;
+        fastcgi_param                   MAGE_IS_DEVELOPER_MODE  false;
     }
 }
