@@ -14,7 +14,7 @@ Usage:
 ### Ubuntu 14.04:
 
 ```bash
-$ wget -nv -O - https://raw.githubusercontent.com/SergeyCherepanov/magentoenvironmentconfiguration/master/install-1404.sh | sudo bash
+$ wget -nv -O - https://raw.githubusercontent.com/SergeyCherepanov/lnpm-magento-prod/master/install-1404.sh | sudo bash
 ```
 
 Put your code to /var/www/hostname.com/public_html
